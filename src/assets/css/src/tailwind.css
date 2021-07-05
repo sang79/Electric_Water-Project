@@ -1,0 +1,241 @@
+/* 
+  npx tailwindcss-cli@latest build ./src/assets/css/src/tailwind.css -c ./src/assets/css/src/tailwind.config.js -o ./src/assets/css/dist/tailwind.css
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* absolute */
+.absolute-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.electric_menu {
+  background-color: #002044;
+}
+.absolute-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-x.absolute-y {
+  transform: translate(-50%, -50%);
+}
+
+/* image */
+.pb-6x1 {
+  padding-bottom: 16.66%;
+}
+
+.pb-5x1 {
+  padding-bottom: 20%;
+}
+
+.pb-4x1 {
+  padding-bottom: 25%;
+}
+
+.pb-3x1 {
+  padding-bottom: 33.33%;
+}
+
+.pb-3x1 {
+  padding-bottom: 33.33%;
+}
+
+.pb-16x9 {
+  padding-bottom: 56.25%;
+}
+
+.pb-9x16 {
+  padding-bottom: 177.77%;
+}
+
+.pb-4x3 {
+  padding-bottom: 75%;
+}
+
+.pb-3x4 {
+  padding-bottom: 133.33%;
+}
+
+.pb-6x4 {
+  padding-bottom: 66.6%;
+}
+
+.pb-4x6 {
+  padding-bottom: 150%;
+}
+
+.pb-8x5 {
+  padding-bottom: 62.5%;
+}
+
+.pb-5x8 {
+  padding-bottom: 160%;
+}
+
+.pb-7x5 {
+  padding-bottom: 71.42%;
+}
+
+.pb-5x7 {
+  padding-bottom: 140%;
+}
+
+.pb-1x1 {
+  padding-bottom: 100%;
+}
+
+/*
+    debug
+*/
+.debug * {
+  outline: 1px solid gold;
+}
+
+.debug-white * {
+  outline: 1px solid #fff;
+}
+
+.debug-black * {
+  outline: 1px solid #000;
+}
+
+.debug-grid {
+  background: transparent
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=)
+    repeat 0 0;
+}
+
+.debug-grid-16 {
+  background: transparent
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=)
+    repeat 0 0;
+}
+
+.debug-grid-8-solid {
+  background: #fff
+    url(data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==)
+    repeat 0 0;
+}
+
+.debug-grid-16-solid {
+  background: #fff
+    url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7)
+    repeat 0 0;
+}
+
+/*
+  background
+*/
+.bg-black-90 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bg-black-80 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-black-70 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-black-60 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-black-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-black-40 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-black-30 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-black-20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bg-black-10 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-black-05 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-white-90 {
+  background-color: hsla(0, 0%, 100%, 0.9);
+}
+
+.bg-white-80 {
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.bg-white-70 {
+  background-color: hsla(0, 0%, 100%, 0.7);
+}
+
+.bg-white-60 {
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.bg-white-50 {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.bg-white-40 {
+  background-color: hsla(0, 0%, 100%, 0.4);
+}
+
+.bg-white-30 {
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.bg-white-20 {
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.bg-white-10 {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+.text-auv {
+  color: #0b1f44;
+}
+.bg-auv {
+  background-color:  #0b1f44;
+}
+.text-auv-yellow {
+  color: #d7970c;
+}
+.shadow-inner-earth {
+ box-shadow:  inset 20px 0 80px 6px #101a26;
+}
+/* CSS for Microsoft project */
+.dropdown-allMicrosoft-ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.dropdown-allMicrosoft-li {
+  display: inline;
+  padding: 10;
+}
+
+
+/* CSS for dropdown All Micorsoft */
+.allMicrosoft-ul {
+  overflow:hidden;
+}
+
+.allMicrosoft-li {
+  display:inline-block;
+}
