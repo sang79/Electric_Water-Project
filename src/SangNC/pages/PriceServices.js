@@ -54,20 +54,20 @@ const PriceServices = () => {
     ]
     return (
         <section className="w-full max-w-screen-2xl mx-auto">
-            <div className=" mx-24 my-4">
+            <div className=" mx-20 my-4">
                 <div className="pb-3 space-y-2">
                     <h2 className="text-xl font-normal">Bảng giá tham khảo khi gọi thợ Rada </h2>
                     <p
                         style={{ backgroundColor: '#2a4051' }}
                         className="w-14 h-1"></p>
                 </div>
-                <ul className="grid grid-cols-5 gap-4">
+                <ul className="grid grid-cols-5 gap-2">
                     {prices.map((item, i) => (
                         <li key={i} className="col-span-1 cursor-pointer rounded-lg bg-pink-100 ">
                             <div className="relative">
                                 <img
-                                    className="w-full bg-cover rounded-t-lg "
-                                    style={{backgroundColor: '#001731', width: '230', height: '150px' }}
+                                    className="bg-cover rounded-t-lg "
+                                    style={{backgroundColor: '#001731', width: 230, height: 150 }}
                                     src={item.img} />
                                 <a href="#" className="absolute bg-center text-white text-xs bottom-2 left-2 px-2 py-1 bg-yellow-800 rounded-md hover:underline">Un-Category</a>
                             </div>

@@ -70,7 +70,7 @@ const MainPage = () => {
             <div className="relative">
               <img
                 className="w-full bg-cover rounded-t-lg bg-center "
-                style={{ backgroundColor: '#001731', width: '250', height: '220px' }}
+                style={{ backgroundColor: '#001731', width: 250, height: 220 }}
                 src={item.img} />
               <a href= {item.link} className="absolute text-white text-xs bottom-2 left-2 px-2 py-1 bg-yellow-800 rounded-md hover:underline">Un-Category</a>
             </div>

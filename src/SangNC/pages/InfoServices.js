@@ -30,7 +30,7 @@ const InfoServices = () => {
     ]
     return (
         <section className="w-full max-w-screen-2xl mx-auto pb-4">
-            <div className=" mx-24 my-4">
+            <div className=" mx-20 my-4">
                 <div className="pb-3 space-y-2">
                     <h2 className="text-xl font-bold">Có thể bạn chưa biết </h2>
                     <p

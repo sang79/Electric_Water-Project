@@ -1,39 +1,68 @@
 import React from 'react'
+import MultipleServices from './Modals/MultipleServices';
+import Traffic from './Modals/Traffic';
 
 const Services = () => {
+    const [showModal, setShowModal] = React.useState(false);
+
     return (
-        <section className="w-full max-w-screen-2xl mx-auto w-full sticky bg-white top-0 z-30">
-            <ul className="bg-red-700 space-y-2 py-2 mx-24 rounded-md">
+        <section className="w-full max-w-screen-2xl mx-auto sticky top-0 z-30">
+            {showModal ? (
+                <>
+                    <div className="justify-center items-center flex overflow-x-hidden fixed  inset-0 z-50 outline-none focus:outline-none">
+                        <div className="mt-28  w-auto my-6 mx-auto max-w-screen-2xl">
+                            <div className="border-0 rounded-lg shadow-lg  flex flex-col w-full bg-white outline-none focus:outline-none">
+                                <ul className="relative space-y-2 items-center justify-between py-2 border-b border-solid border-blueGray-200 rounded-t">
+                                    <li className="relative">
+                                        <MultipleServices />
+                                    </li>
+                                    <li>
+                                        <button
+                                            className="text-xl text-gray-500 absolute right-0 top-0 background-transparent font-bold outline-none focus:outline-none m-4 ease-linear transition-all duration-150"
+                                            type="button"
+                                            onClick={() => setShowModal(false)}>
+                                            ×
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="opacity-50 fixed bg-gray-900 inset-0 z-40"></div>
+                </>
+            ) : null}
+            <ul className="bg-red-700 space-y-2 py-2 mx-20 rounded-md">
                 <li className="px-2 flex rounded-md space-x-4  cursor-pointer">
-                    <ul className="w-3/6 flex justify-between rounded-md items-stretch relative h-15 bg-white items-center  ">
-                        <li className="flex items-center space-x-1 pl-1 text-gray-600">
+                    <div className="flex w-3/6 pl-2 justify-between rounded-md items-stretch relative h-15 bg-white items-center  ">
+                        <span className="rounded-l-md w-9 flex justify-center items-center  text-gray-600">
                             <i className="fas fa-filter text-sm"></i>
-                            <p
-                                className="placeholder-gray-500 flex w-96 items-center border-0 h-8 text-md outline-none"
-                            >
+                        </span>
+                        <button
+                            onClick={() => setShowModal(true)}
+                            className="flex w-full items-center border-0 h-8 text-md cursor-default focus:outline-none"
+                        >
+                            <span className="text-gray-600">
                                 Mời bạn chọn nhóm dịch vụ...
-                            </p>
-                        </li>
-
-                        <li className="flex items-center rounded-r-md  bg-gray-200 px-3 text-gray-600">
+                            </span>
+                        </button>
+                        <span className="flex items-center rounded-r-md  bg-gray-200 px-3 text-gray-600">
                             <i className="fas fa-sort-down"></i>
-                        </li>
-                    </ul>
-
-                    <ul className="flex w-3/5 justify-between rounded-md items-stretch relative h-15 bg-white items-center  ">
-                        <li className="flex items-center space-x-2 pl-2 text-red-600">
+                        </span>
+                    </div>
+                    <div className="flex w-3/5 justify-between rounded-md items-stretch relative h-15 bg-white items-center  ">
+                        <span className="rounded-l-md w-9 flex justify-center items-center  text-gray-600">
                             <i class="fas fa-clipboard-list test-md"></i>
-                            <p
-                                className="text-red-500 font-semibold flex items-center border-0 h-8 text-md outline-none"
-                            >
+                        </span>
+                        <button
+                            className="placeholder-gray-500 flex w-full items-center border-0 h-8 text-md cursor-default focus:outline-none">
+                            <span className="text-red-500  font-semibold flex items-center border-0 h-8 text-md outline-none">
                                 Chọn loại dịch vụ bạn cần
-                            </p>
-                        </li>
-
-                        <li className="flex items-center rounded-r-md  bg-gray-200 px-3 text-gray-600">
+                            </span>
+                        </button>
+                        <span className="flex items-center rounded-r-md  bg-gray-200 px-3 text-gray-600">
                             <i className="fas fa-sort-down"></i>
-                        </li>
-                    </ul>
+                        </span>
+                    </div>
                 </li>
                 <li className="px-2 flex rounded-md space-x-4  cursor-pointer">
                     <ul className="w-3/6 flex justify-between rounded-md items-stretch relative h-15 bg-white items-center  ">
@@ -75,9 +104,9 @@ const Services = () => {
                             />
                         </li>
                     </ul>
-                    <button 
-                    style= {{backgroundColor: '#5cb85c'}}
-                    className="w-3/5 flex justify-center items-center outline-none rounded-md  h-15 items-center text-white ">
+                    <button
+                        style={{ backgroundColor: '#5cb85c' }}
+                        className="w-3/5 flex justify-center items-center  rounded-md  h-15 items-center text-white focus:outline-none">
                         Gửi yêu cầu tìm dịch vụ gần bạn...
                     </button>
                 </li>
