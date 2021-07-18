@@ -88,7 +88,7 @@ const MainPage = () => {
               <li className="w-full ">
                 <p
                   style={{ fontSize: 16 }}
-                  className="select-none tracking-tighter text-justify cursor-default leading-tight">{item.desc}</p>
+                  className="select-none tracking-tighter cursor-default leading-tight">{item.desc}</p>
               </li>
             </ul>
           </li>

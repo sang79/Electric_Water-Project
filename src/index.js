@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import RadaPage from './SangNC/pages/About_Rada/RadaPage'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route exact path='/' component={App} />
+      <Route path='/radaPage' component={RadaPage} />
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

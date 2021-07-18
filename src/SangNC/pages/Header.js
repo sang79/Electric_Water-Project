@@ -44,7 +44,7 @@ const Header = () => {
                                 <p className="transition duration-300 opacity-0 group-hover:opacity-100 h-1 bg-white w-16"></p>
                             </div>
                             <div className="group space-y-4">
-                                <Link to= "/header">
+                                <Link to= "/radaPage">
                                 <p className="hover:underline">About Us</p>
                                 </Link>
                                 <p className="transition duration-300 opacity-0 group-hover:opacity-100 h-1 bg-white w-20"></p>

@@ -48,7 +48,9 @@ html {
 .electric_menu {
   background-color: #002044;
 }
-
+.bg-electric {
+  background-color: #272727;
+}
 .tracking-thin {
   letter-spacing: -0.08em;
 }
